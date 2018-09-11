@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+</head>
+<body>
+<script>
+    "use strict";
+    var test=true;
+    var a=1,b=2,c=3;
+    var num=0b110;
+    // 0b是二进制，0x十六进制，NaN;
+    console.log(num,typeof(num),test,typeof (test));
+//字符串类型
+    var str1='qwer'; //string类型
+    console.log(str1,typeof(str1) );
+//对象类型，js中没有字典
+    var obj1={name:'qwer',age:'25'};
+    console.log(obj1,typeof (obj1));
+//数组类型
+    var list1=[1,2,3];
+    console.log(list1,typeof (list1));
+
+    var obj2=null;
+    console.log(obj2,typeof (obj2));
+
+    //函数类型
+    var func1=function () {
+        console.log('函数')
+    };
+    console.log(func1,typeof (func1));
+
+    //undefined类型
+    var un =undefined;
+    console.log(un,typeof (un));
+
+</script>
+</body>
+</html>

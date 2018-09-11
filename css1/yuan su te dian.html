@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素特点</title>
+    <style>
+        .box1{height: 200px;background: #a0d2f3; /*不设置宽度默认100%*/
+        text-align: center;line-height: 200px;
+        }
+
+        span{
+            /*display: block;装换成块级元素*/
+            display: inline-block; /*转换成块元素*/
+            /*display:none; 隐藏元素，并不占位置*/
+            /*width: 10px;height: 20px;*/
+            background: greenyellow;
+            margin: 10px;
+            padding: 5px;
+        }
+        input{width: 500px;height: 40px;
+        background:blanchedalmond;
+        padding: 5px;
+        margin: 10px;
+        border: 2px solid green}
+
+        .box3{height: 300px;
+            width: 200px;
+            background: blanchedalmond;}
+        .box3 span{display: none;}
+
+        .box3:hover span{display: block;font-size: 30px;
+        color: #a02565; text-align: center;line-height: 100px}
+    </style>
+</head>
+<body>
+<div class="box1">box1</div>
+天青色等烟雨，而我在等你。<span>在瓶底书彷隶汉前朝的飘逸。</span>翠烟袅
+袅升起，隔江千万里。<br>
+输入<input type="text">
+
+<div class="box3"><span>我显示了</span>666666</div>
+</body>
+</html>

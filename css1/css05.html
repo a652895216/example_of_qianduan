@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        .box{width:200px; height: 200px;background-color: green;}
+        .box:hover{width:100px; height: 100px;background-color: orangered;} /*鼠标停留时的状态*/
+        /*after:在元素里面的尾部插入内容,before同理*/
+        .box:after{content: '6666';}
+        .box:before{content: '9999';}
+
+    </style>
+</head>
+<body>
+    <div class="box">aaaa</divclass>
+</body>
+</html>

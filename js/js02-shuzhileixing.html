@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据类型转换，运算</title>
+</head>
+<body>
+<script>
+    //数值类型转换，Number（），parseInt()整型,paserFloat浮点型
+    var str='1a123bb';
+    console.log(str,typeof (str));
+    var res=Number(str);
+    console.log(res,typeof (res));
+    var res1=parseInt(str);
+    console.log(res1,typeof (res1));
+    var res2=parseFloat(str);
+    console.log(res2,typeof (res2));
+//注意！！只会转化最前面的数值，遇到字母非数值就停止转换,Number（）类型有字母就变成NaN，
+
+//IsNaN 检车一个变量是不是NaN
+    var num='qwer';
+    console.log(num,isNaN(num));
+
+    var str00='11',str01=''; //字符创转换布尔值 false是空字符串
+    console.log(str00,Boolean(str00),Boolean(str01));
+
+    //数值转为布尔值时 false是0，NaN
+//对象转为布尔值的时候
+    var obj1={name:'lujiahui',age:'25'};
+    console.log(obj1,Boolean(obj1));
+    console.log('1'+'1'+2+3) //自动转变成字符相加,但是不要这么用
+    //运算符++等同于子增1，同C语言 ，--等同子减一。
+
+    var B = 1==='1';  //两个等号会默认进行数值类型转换。三个等号严格比较
+    console.log(B)
+</script>
+</body>
+</html>

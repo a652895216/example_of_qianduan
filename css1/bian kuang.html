@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框属性</title>
+    <style>
+        .item{
+            width: 200px;height: 200px;
+            border:dashed 10px #a0d2f3;
+            padding: 5px 10px 20px 50px;
+
+
+
+        }
+        /*边框三种样式，solid，dotted，dashed*/
+
+
+        .item1{
+            width: 200px;height: 200px;
+             border-bottom:dashed 10px #a02565;
+              border-top:solid 5px red ;
+              border-left: dotted 8px green;
+              border-right:solid 7px pink;
+
+
+              }
+        /*可以单独设置上下边框 top，buttom ，left，right*/
+
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius:10% 20% 30% 40% ;
+            border: solid red 1px;}
+        /*圆角*/
+        .box1{
+            width: 200px;height: 200px;border: 2px gray solid;
+ }
+          /*阴影 第一个设置水平偏移，第二个垂直偏移，第三个模糊程度，第四个扩散范围，加了inset是内阴影*/
+        .box1:hover{ box-shadow:10px 5px 50px 2px gray}
+    </style>
+</head>
+<body>
+<div class="item"></div>
+<div class="item1"></div>
+<div class="box1"></div>
+</body>
+</html>

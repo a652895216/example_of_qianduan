@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示图片</title>
+    <style type="text/css">
+        a{text-decoration: none;}
+        a{color:black;}
+        #lei1,#lei2{display: none; width:400px;}
+        #a1:hover~#lei1{display: block;} /*显示图片*/
+        #a2:active~#lei2{display: block;}   /*加~，是匹配标签选择器*/
+
+        /*a:visited{color: orangered}*/
+    </style>
+</head>
+<body>
+<a id='a1' href="">迪丽热巴</a>
+<a id='a2' href="">zzh</a>
+<img id='lei1' src="../123.jpg">
+<img id='lei2' src="../123.jpg">
+<!--两个必须挨着-->
+</body>
+</html>

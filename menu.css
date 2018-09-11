@@ -1,0 +1,19 @@
+*{margin:0; padding:0;}
+.one{width:70%; height: 700px; background-color: pink ; margin: 0 auto}
+.two{width:70%; height: 700px; background-color: blue ; margin: 0 auto}
+.three{width:70%; height: 700px; background-color: green ; margin: 0 auto}
+.four{width:70%; height: 700px; background-color: red ; margin: 0 auto}
+.five{width:70%; height: 700px; background-color: blanchedalmond ; margin: 0 auto}
+
+ul{list-style: none;}
+ul li{text-align: center;margin: 1px; line-height: 40px;  }
+a{text-decoration: none}
+ul li a{display:block; width: 70px; height: 40px; background-color: #a0d2f3}
+.weizhi{position: fixed; right: 30px;top:80%;}
+
+.reba img{display: none}
+
+.reba a:hover+img{width: 400px;display: block;
+    position: fixed;
+    right:20%;
+    top: 50%;}

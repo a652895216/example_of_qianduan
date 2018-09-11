@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+
+        .box1{width: 200px;height: 200px;background: greenyellow;
+        border: 10px solid yellow;
+        padding: 20px ;
+        margin: 50px;
+        }
+
+        .box2{width: 300px;height: 300px;
+            background: #a0d2f3;
+            padding: 20px;
+            border: 10px solid red;
+            box-sizing: border-box; /*设置大小，box-sizing让边距往里缩,控制盒子大小不动*/
+        }
+    </style>
+
+</head>
+<body>
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+</body>
+</html>

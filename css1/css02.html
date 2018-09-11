@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css的三种选择器</title>
+    <style>
+        /*div{
+            width: 100px;
+            height: 200px;
+            background-color: green;
+        }*/
+/* 类选择器 通过class类名来设置元素的样式,影响范围可以控制，相对较小*/
+        .item01{width: 100px;
+            height: 200px;
+            background-color: red;
+        }
+        .item02{width: 200px;
+            height: 200px;
+            background-color: black; border: 5px solid black;
+        }
+/* #id选择器。通过id属性的值来设置元素的样式 */
+   #box01{width: 50px;
+            height: 50px;
+            border: 5px solid black;
+            background-color: blueviolet;}
+
+        .bgm{background-color: aquamarine}
+
+
+    </style>
+</head>
+<body>
+<div class="item01"></div>
+<div class="item02 bgm"></div>
+<div class="item01"></div>
+<div id="box01"></div> <!--注意！！！ id具有唯一性不能重名。不能再用box01了-->
+<!--三种基本选择器优先级问题， div<class<id 推荐使用class-->
+
+</body>
+</html>

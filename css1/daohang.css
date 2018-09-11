@@ -1,0 +1,16 @@
+*{margin: 0;
+    padding: 0;}
+/*ul{list-style: none;*/
+    /*background-color: beige;*/
+    /*width: 200px;height: 160px;*/
+/*}*/
+/*li a{display:block; text-decoration:none; color: black; width:100px;}*/
+/*ul li{line-height:40px;  }*/
+/*li a:hover{background-color: aqua;color:red;width: 200px}*/
+/*li a:active{background-color: green;}*/
+
+ul{list-style: none; background-color: beige; overflow: hidden;}
+ul li{float:left;width:200px; }
+li a{text-decoration: none; display: block; padding:2px 5px; text-align: center;color: black}
+.so{position: absolute;right: 10px;
+    top: 2px;}

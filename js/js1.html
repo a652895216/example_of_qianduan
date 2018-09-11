@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机数</title>
+    <style type="text/css">
+        #box{width:1000px;height:1000px;background-color: #a0d2f3;  }
+        #name{width:300px;height:300px;background-color:orangered;}
+        #start{width:80px;height:50px;}
+        #stop{width:80px;height:50px;}
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="name"></div>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</div>
+
+<script type="text/javascript">
+    var names = document.getElementById('name');
+    var starts = document.getElementById('start');
+    var stops = document.getElementById('stop');
+
+    var into;
+
+    starts.onclick = function () {
+        if(into != null) return; //null相当于none，判断是否已经开始
+        into=setInterval(function () {
+
+            var num = ['1','2','3','4','5','6','7','8'];
+        names.innerHTML=num[rand(0,num.length-1)];},100) //每次隔一百号毫秒
+    };
+    stops.onclick = function () {
+        clearInterval(into);
+        into = null
+    };
+    function rand(x,y) {
+        return Math.floor(Math.random()*(y-x)+x)
+    }
+
+
+
+
+</script>
+</body>
+</html>

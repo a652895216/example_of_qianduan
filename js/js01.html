@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js基本使用</title>
+    <style>
+        div{width:200px;height: 200px;background:black;}
+
+    </style>
+
+</head>
+<body>
+<script>
+    alert('ok,成功运行') /*弹框*/ /*嵌入式*/
+</script>
+
+<script src="./js001.js"> /*外联式*/
+</script>
+
+<div onclick="alert('666')"></div>
+当你单击的黑色时候会弹窗
+<br>
+<a href="javascript:alert('我是a标签式的')">点击显示</a>
+<a href="javascript:void(0)" onclick="alert('非显示代码')">点击不显示代码</a>
+</body>
+</html>
